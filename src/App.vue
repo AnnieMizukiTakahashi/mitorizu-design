@@ -5,9 +5,6 @@
               <div class="container">
                   <div class="navbar-brand">
                       <span class="navbar-burger burger" data-target="navbarMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
-                      <span></span>
-                      <span></span>
-                      <span></span>
                       </span>
                   </div>
                   <div id="navbarMenu" class="navbar-menu" :class="{'is-active': isMenuActive}">
@@ -21,13 +18,13 @@
                                 <router-link to="about">About</router-link>
                               </li>
                               <li>
-                                <router-link to="learn">learn</router-link>
+                                <router-link to="learn">Learn</router-link>
                               </li>
                               <li>
-                                <router-link to="theme">theme</router-link>
+                                <router-link to="theme">Theme</router-link>
                               </li>
                               <li>
-                                <router-link to="academic">academic</router-link>
+                                <router-link to="academic">AcademicFild</router-link>
                               </li>
                             </ul>                           
                           </div>
