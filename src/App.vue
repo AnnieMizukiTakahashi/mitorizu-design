@@ -1,33 +1,34 @@
 <template>
-  <div id="app" class="hero is-fullheight">
-      <header>
+  <div id="app">
+      <header class="hero is-fullheight">
           <nav class="navbar">
-              <div class="container">
-                  <div class="navbar-brand">
-                      <span class="navbar-burger burger" data-target="navbarMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
-                      </span>
-                  </div>
-                  <div id="navbarMenu" class="navbar-menu" :class="{'is-active': isMenuActive}">
-                      <div class="navbar-end">
-                          <div class="tabs is-one-quarter-desktop is-right">
-                            <ul>
-                              <li>
-                                <router-link to="/">Top</router-link>
-                              </li>
-                              <li>
-                                <router-link to="about">About</router-link>
-                              </li>
-                              <li>
-                                <router-link to="learn">Learn</router-link>
-                              </li>
-                              <li>
-                                <router-link to="theme">Theme</router-link>
-                              </li>
-                              <li>
-                                <router-link to="academic">AcademicFild</router-link>
-                              </li>
-                            </ul>                           
-                          </div>
+              <div class="navbar-brand">
+                  <span class="navbar-burger burger has-text-white" data-target="navbarMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+              </div>
+              <div id="navbarMenu" class="navbar-menu" :class="{'is-active': isMenuActive}">
+                  <div class="navbar-end">
+                      <div class="tabs is-one-quarter-desktop is-right">
+                        <ul>
+                          <li>
+                            <router-link class="has-text-white" to="/">Top</router-link>
+                          </li>
+                          <li>
+                            <router-link class="has-text-white" to="about">About</router-link>
+                          </li>
+                          <li>
+                            <router-link class="has-text-white" to="learn">Learn</router-link>
+                          </li>
+                          <li>
+                            <router-link class="has-text-white" to="theme">Theme</router-link>
+                          </li>
+                          <li>
+                            <router-link class="has-text-white" to="academic">AcademicFild</router-link>
+                          </li>
+                        </ul>                           
                       </div>
                   </div>
               </div>
@@ -44,12 +45,26 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../node_modules/bulma/bulma.sass";
 #app {
   font-family:Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+}
+.navbar-brand{
+  background-color: #7490C6;
+}
+.navbar-menu {
+  background-color: #7490C6;
+  margin: auto;
+  padding: 0px;
+}
+.tabs{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 32px;
+}
+a {
+  color: #FFFFFF;
 }
 </style>
