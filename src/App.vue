@@ -11,7 +11,7 @@
               </div>
               <div id="navbarMenu" class="navbar-menu" :class="{'is-active': isMenuActive}">
                   <div class="navbar-end">
-                      <div class="tabs is-one-quarter-desktop is-right">
+                      <div class="tabs mr-56 is-one-quarter-desktop is-right">
                         <ul>
                           <li>
                             <router-link class="has-text-white" to="/">Top</router-link>
@@ -49,9 +49,6 @@ export default {
 
 #app {
   font-family:Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 .navbar-brand{
   background-color: $main-color;
@@ -59,11 +56,9 @@ export default {
 .navbar-menu {
   background-color: $main-color;
   margin: auto;
-  padding: 0px;
 }
 .tabs{
   font-size: 20px;
   font-weight: bold;
-  margin-right: 32px;
 }
 </style>
