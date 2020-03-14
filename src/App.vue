@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "src/styles/_variables.scss";
+
 #app {
   font-family:Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -52,10 +54,10 @@ export default {
   text-align: center;
 }
 .navbar-brand{
-  background-color: #7490C6;
+  background-color: $main-color;
 }
 .navbar-menu {
-  background-color: #7490C6;
+  background-color: $main-color;
   margin: auto;
   padding: 0px;
 }
@@ -63,8 +65,5 @@ export default {
   font-size: 20px;
   font-weight: bold;
   margin-right: 32px;
-}
-a {
-  color: #FFFFFF;
 }
 </style>
