@@ -28,7 +28,7 @@
                           <li>
                             <router-link class="has-text-white" to="academic">AcademicFild</router-link>
                           </li>
-                        </ul>                           
+                        </ul>
                       </div>
                   </div>
               </div>
