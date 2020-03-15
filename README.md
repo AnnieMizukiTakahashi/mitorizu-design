@@ -1,6 +1,9 @@
 # mitorizu-design01
 
-> A Vue.js project
+
+知の見取り図リニューアルのフロント部分モックアップ作成（APIなし）
+Vue.jsのSPA　CSSフレームワークにBulma、Buefyを使用
+
 
 ## Build Setup
 
