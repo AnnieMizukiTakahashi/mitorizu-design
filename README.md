@@ -2,7 +2,16 @@
 
 
 知の見取り図リニューアルのフロント部分モックアップ作成（APIなし）
+<br>
 Vue.jsのSPA　CSSフレームワークにBulma、Buefyを使用
+
+## CSSフレームワーク
+Bulma
+https://bulma.io/documentation/
+
+Buefy
+https://buefy.org/
+
 
 
 ## Build Setup
