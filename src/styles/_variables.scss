@@ -1,10 +1,11 @@
-$base-width: 1024px;
-$pc-min-width: 768px;
+$desktop-min-width: 1024px;
+$tablet-min-width: 768px;
 
-$header-height: 40px;
-$header-height-pc: 64px;
+// $header-height: 40px;
+$header-height-desktop: 72px;
 
 $main-color: #7490C6;
 $dark-blue: #282b33;
 $text-dark-blue: #3B3D45;
+$background-color: #FAFBFE;
 $white: #ffffff;

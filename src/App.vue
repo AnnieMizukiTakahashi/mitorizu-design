@@ -3,7 +3,7 @@
     <header class="hero">
         <Header/>
     </header>
-      <router-view/>
+    <router-view/>
     <Footer/>
   </div>
 </template>
@@ -32,13 +32,14 @@ export default {
 body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color;
 }
 
 ///////////////////////
 // Layouts
 ///////////////////////
 .page-container{
-  max-width: $base-width;
+  max-width: $desktop-min-width;
   margin: auto;
 }
 
@@ -86,7 +87,7 @@ body{
   }
 }
 
-@media (min-width: $pc-min-width){
+@media (min-width: $tablet-min-width){
   .ellipsis {
     &.is-ellipsis-1-pc {
       -webkit-line-clamp: 1;
@@ -170,7 +171,7 @@ body{
   margin-bottom: 4rem;
 }
 
-@media (min-width: $pc-min-width){
+@media (min-width: $tablet-min-width){
   .mt-0-pc{
     margin-top: 0;
   }
@@ -275,7 +276,7 @@ body{
   margin-right: -1rem;
 }
 
-@media (min-width: $pc-min-width){
+@media (min-width: $tablet-min-width){
   .ml-0-pc {
     margin-left: 0;
   }
@@ -332,6 +333,18 @@ body{
 }
 .mt-minus-12{
   margin-top: -0.75rem;
+}
+
+@media (min-width: $desktop-min-width){
+  .mt-8-desktop {
+    margin-top: 8px;
+  }
+  .mt-16-desktop {
+    margin-top: 16px;
+  }
+  .ml-16-desktop {
+    margin-left: 16px;
+  }
 }
 
 ///////////////////////
@@ -428,7 +441,7 @@ body{
   padding-bottom: 3rem;
 }
 
-@media (min-width: $pc-min-width){
+@media (min-width: $tablet-min-width){
   .pd-0-pc{
     padding: 0px;
   }
@@ -480,7 +493,7 @@ body{
   }
 }
 
-@media (min-width: $pc-min-width) {
+@media (min-width: $tablet-min-width) {
   .pd-8-pc {
     padding: 0.5rem;
   }
