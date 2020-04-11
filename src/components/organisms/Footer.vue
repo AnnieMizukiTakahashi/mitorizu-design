@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/_variables.scss';
+@import '../../styles/_variables.scss';
 footer{
     background-color: $dark-blue;
 

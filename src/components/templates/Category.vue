@@ -1,6 +1,6 @@
 <template>
     <div class="container is-desktop hero is-fullheight">
-        <p>academic_field</p>
+        <p>Category_academic_field</p>
     </div>
 </template>
 
@@ -10,5 +10,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/_variables.scss';
+@import '../../styles/_variables.scss';
 </style>

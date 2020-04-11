@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import top from '@/components/top'
-import about from '@/components/about'
-import theme from '@/components/theme'
-import academic from '@/components/academic'
-import learn from '@/components/learn'
+import Top from '@/components/templates/Top'
+import About from '@/components/templates/About'
+import Theme from '@/components/templates/Theme'
+import Category from '@/components/templates/Category'
+import CategoryDetail from '@/components/templates/CategoryDetail'
 
 Vue.use(Router)
 
@@ -13,27 +13,27 @@ export default new Router({
     {
       path: '/',
       name: 'top',
-      component: top
+      component: Top
     },
     {
       path: '/about',
       name: 'about',
-      component: about
+      component: About
     },
     {
       path: '/theme',
       name: 'theme',
-      component: theme
+      component: Theme
     },
     {
-      path: '/academic',
-      name: 'academic',
-      component: academic
+      path: '/category',
+      name: 'category',
+      component: Category
     },
     {
-      path: '/learn',
-      name: 'learn',
-      component: learn
+      path: '/category-detail',
+      name: 'category-detail',
+      component: CategoryDetail
     }
   ]
 })
