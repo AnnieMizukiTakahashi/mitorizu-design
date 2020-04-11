@@ -61,6 +61,18 @@ body{
   text-decoration: underline
 }
 
+.has-header{
+  margin-top: $header-height;
+
+  @media (min-width: $desktop-min-width){
+    margin-top: $header-height-desktop;
+  }
+}
+
+.has-header-desktop{
+  height: $header-height-desktop;
+}
+
 .ellipsis {
   display: block;
   display: -webkit-box;

@@ -4,8 +4,8 @@
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <router-link class="logo mt-4 ml-8 mt-8-desktop" to="/">
-              <img src="@/assets/ic_logo_white.png" class="ml-16-desktop" alt="知の見取り図" contain width="144"/>
+            <router-link class="logo mt-8 ml-8" to="/">
+              <img src="@/assets/ic_logo_white.png" class="ml-16-desktop" alt="知の見取り図" contain width="136"/>
               <p class="subtitle is-size-7 white-text-color">わくわくするような未知の知との出会い</p>
               <span class="subtitle-mobile ml-16 is-size-7">わくわくするような未知の知との出会い</span>
             </router-link>
