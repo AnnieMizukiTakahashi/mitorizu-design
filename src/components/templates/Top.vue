@@ -1,7 +1,7 @@
 <template>
-    <div class="container is-desktop hero is-fullheight">
-        <p>Toppage</p>
-    </div>
+  <div class="page-container is-desktop hero is-fullheight">
+    <p>Toppage</p>
+  </div>
 </template>
 
 <script>

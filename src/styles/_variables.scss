@@ -1,18 +1,10 @@
+$base-width: 1024px;
+$pc-min-width: 768px;
+
+$header-height: 40px;
+$header-height-pc: 64px;
+
 $main-color: #7490C6;
 $dark-blue: #282b33;
+$text-dark-blue: #3B3D45;
 $white: #ffffff;
-
-$spaces: (0, 4, 8, 16, 20, 24, 32, 40, 48, 56, 64, 72);
-$sides: (top, bottom, left, right);
-
-@each $space in $spaces {
-  @each $side in $sides {
-    .m#{str-slice($side, 0, 1)}-#{$space} {
-      margin-#{$side}: #{$space}px !important;
-    }
-
-    .p#{str-slice($side, 0, 1)}-#{$space} {
-      padding-#{$side}: #{$space}px !important;
-    }
-  }
-}
