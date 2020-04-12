@@ -51,7 +51,7 @@ body{
 }
 
 .white-text-color {
-  color: $white;
+  color: $white !important;
 }
 
 ///////////////////////

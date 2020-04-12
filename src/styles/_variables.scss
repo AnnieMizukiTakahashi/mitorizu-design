@@ -9,3 +9,11 @@ $dark-blue: #282b33;
 $text-dark-blue: #3B3D45;
 $background-color: #FAFBFE;
 $white: #ffffff;
+
+@import '~bulma/sass/utilities/_all';
+$carousel-arrow-color: #7490C6;
+$carousel-indicator-border: #7490C6;
+$carousel-indicator-color: #ffffff;
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
