@@ -1,19 +1,23 @@
-$desktop-min-width: 1024px;
-$tablet-min-width: 768px;
+$desktop-max-width: 1024px;
+$tablet-max-width: 768px;
+$mobile-max-width: 480px;
 
-$header-height: 54px;
+$header-height: 52px;
 $header-height-desktop: 72px;
 
-$main-color: #7490C6;
+$main-color: #7490c6;
+$main-hover-color: #5776b5;
 $dark-blue: #282b33;
-$text-dark-blue: #3B3D45;
-$background-color: #FAFBFE;
+$text-dark-blue: #3b3d45;
+$background-color: #fafbfe;
 $white: #ffffff;
+$gray-100: #edeff4;
 
 @import '~bulma/sass/utilities/_all';
 $carousel-arrow-color: #7490C6;
 $carousel-indicator-border: #7490C6;
 $carousel-indicator-color: #ffffff;
+// $carousel-min-height: 162px;
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';

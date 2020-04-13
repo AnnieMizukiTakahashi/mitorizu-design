@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="">
     <b-carousel
       v-model="carousel"
       :animated="animated"
@@ -12,9 +12,9 @@
       :repeat="repeat"
       @change="info($event)">
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-      <section :class="`hero is-medium is-${carousel.color} is-bold`">
-        <div class="hero-body has-text-centered">
-          <h1 class="title">{{carousel.title}}</h1>
+      <section :class="`hero is-medium is-${carousel.color}`">
+        <div class="slide-container">
+          <p class="main-title has-text-weight-bold is-size-5 is-size-4-pc">{{carousel.title}}</p>
         </div>
       </section>
       </b-carousel-item>
@@ -36,8 +36,8 @@ export default {
       pauseType: 'is-primary',
       interval: 5000,
       carousels: [
-        { title: 'Slide 1', color: 'dark' },
-        { title: 'Slide 2', color: 'primary' },
+        { title: 'Vol.1 LGBTの学生、将来の雇用主に望むもの', color: 'dark' },
+        { title: 'LGBTQ 学びはじめの本棚', color: 'primary' },
         { title: 'Slide 3', color: 'info' },
         { title: 'Slide 4', color: 'success' },
         { title: 'Slide 5', color: 'warning' },
@@ -49,6 +49,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../styles/_variables.scss';
+
+.slide-container {
+  position: relative;
+
+    .main-title {
+      position: absolute;
+      left: 1rem;
+      bottom: 2rem;
+  }
+}
+
+@import '../../styles/_variables.scss';
+.slide-container {
+  height: 324px;
+}
+
+@media (max-width: $mobile-max-width) {
+  .slide-container {
+    height: 158px;
+  }
+}
+
 
 </style>
