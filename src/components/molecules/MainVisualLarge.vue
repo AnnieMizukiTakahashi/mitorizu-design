@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       carousel: 0,
       animated: 'slide',
@@ -70,6 +70,5 @@ export default {
     height: 158px;
   }
 }
-
 
 </style>
