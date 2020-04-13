@@ -6,9 +6,9 @@
       </div>
       <div class="main-visual-card column">
         <div class="large-card-border"/>
-        <main-visual-card class="background-success"/>
+        <top-card class="top-card"/>
         <div class="card-border"/>
-        <main-visual-card class="background-primary"/>
+        <top-book-card class="top-book-card"/>
       </div>
     </div>
   </div>
@@ -16,22 +16,26 @@
 
 <script>
 import MainVisualLarge from '../molecules/MainVisualLarge.vue'
-import MainVisualCard from '../molecules/MainVisualCard.vue'
+import TopCard from '../molecules/TopCard.vue'
+import TopBookCard from '../molecules/TopBookCard.vue'
 
 export default {
   components: {
     MainVisualLarge,
-    MainVisualCard
+    TopCard,
+    TopBookCard
   }
 }
 </script>
 <style lang="scss" scoped>
 @import '../../styles/_variables.scss';
 
-.main-visual-card {
-  @media (max-width: $tablet-max-width) {
-    display: flex;
-  }
+.top-card {
+  height: 48.7%;
+}
+
+.top-book-card {
+  height: 48.7%;
 }
 
 .card-border {
@@ -39,13 +43,27 @@ export default {
   background-color: $white;
   width: 100%;
   border: none;
+}
 
-  @media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
+  .top-card {
+    height: 100%;
+  }
+
+  .top-book-card {
+    height: 100%;
+  }
+
+  .main-visual-card{
+    display: flex;
+    height: 10.25rem;
+    width: auto;
+  }
+
+  .card-border {
     height: 100%;
     width: 0.25rem;
     border: none;
-
   }
 }
-
 </style>
