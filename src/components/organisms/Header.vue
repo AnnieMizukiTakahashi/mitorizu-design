@@ -18,7 +18,7 @@
 
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
-              <div class="has-text-weight-semibold is-right is-flex-desktop">
+              <div class="is-right is-flex-desktop">
                 <router-link to="about">
                 <a class="navbar-item">知の見取り図とは？</a>
                 </router-link>

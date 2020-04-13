@@ -111,7 +111,7 @@ body{
   }
 }
 
-@media (min-width: $tablet-max-width){
+@media (min-width: $desktop-min-width){
   .ellipsis {
     &.is-ellipsis-1-pc {
       -webkit-line-clamp: 1;
@@ -195,7 +195,7 @@ body{
   margin-bottom: 4rem;
 }
 
-@media (min-width: $tablet-max-width){
+@media (min-width: $desktop-min-width){
   .mt-0-pc{
     margin-top: 0;
   }
@@ -300,7 +300,7 @@ body{
   margin-right: -1rem;
 }
 
-@media (min-width: $tablet-max-width){
+@media (min-width: $desktop-min-width){
   .ml-0-pc {
     margin-left: 0;
   }
@@ -468,7 +468,7 @@ body{
   padding-bottom: 3rem;
 }
 
-@media (min-width: $tablet-max-width){
+@media (min-width: $desktop-min-width){
   .pd-0-pc{
     padding: 0px;
   }
@@ -523,7 +523,7 @@ body{
   }
 }
 
-@media (min-width: $tablet-max-width) {
+@media (min-width: $desktop-min-width) {
   .pd-8-pc {
     padding: 0.5rem;
   }
