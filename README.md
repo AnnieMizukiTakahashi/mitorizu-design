@@ -9,10 +9,11 @@ Vue.jsのSPA　CSSフレームワークにBulma、Buefyを使用
 Bulma
 https://bulma.io/documentation/
 
-Buefy
+Buefy (Carouselのみ)
 https://buefy.org/
 
-
+Icons
+https://material.io/resources/icons/?icon=alarm&style=baseline
 
 ## Build Setup
 
