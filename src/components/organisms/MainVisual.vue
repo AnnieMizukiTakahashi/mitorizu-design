@@ -33,6 +33,7 @@ export default {
 .top-card {
   height: 48.7%;
 }
+
 .top-book-card {
   height: 48.7%;
 }
@@ -48,14 +49,17 @@ export default {
   .top-card {
     height: 100%;
   }
+
   .top-book-card {
     height: 100%;
   }
+
   .main-visual-card{
     display: flex;
     height: 10.25rem;
     width: auto;
   }
+
   .card-border {
     height: 100%;
     width: 0.25rem;

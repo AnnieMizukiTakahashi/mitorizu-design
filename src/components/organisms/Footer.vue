@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="container is-desktop">
-      <div class="columns has-text-left ml-16 pt-16 pb-32">
+    <div class="container ">
+      <div class="columns has-text-left pl-16 pr-16 pt-16 pb-32">
         <div class="column is-one-quarter image elements display is-flex">
           <router-link to="/">
           <img src="@/assets/ic_logo_white.png" art="" contain height="48" width="186"/>

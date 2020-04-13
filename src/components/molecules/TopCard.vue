@@ -32,7 +32,6 @@
   }
 }
 
-
   .card-title {
   @media (max-width: $tablet-max-width) {
     margin-top: 4rem;

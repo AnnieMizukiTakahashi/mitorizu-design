@@ -61,9 +61,4 @@ export default {
   display: block;
   opacity: 0.6;
 }
-
-
-@media (max-width: $mobile-max-width) {
-
-}
 </style>
