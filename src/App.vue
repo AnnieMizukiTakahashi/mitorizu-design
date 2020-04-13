@@ -26,7 +26,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Gothic&display=swap');
 
 #app {
-  font-family:'Sawarabi Gothic', 'Noto Sans JP', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
 }
 
 body{
@@ -39,7 +39,7 @@ body{
 // Layouts
 ///////////////////////
 .page-container{
-  max-width: $desktop-min-width;
+  max-width: $desktop-max-width;
   margin: auto;
 }
 
@@ -51,25 +51,37 @@ body{
 }
 
 .white-text-color {
-  color: $white;
+  color: $white !important;
+}
+
+.main-text-color {
+  color: $main-color;
+}
+
+.background-primary {
+  background-color: $primary;
+}
+
+.background-success {
+  background-color: $success;
 }
 
 ///////////////////////
 // Style
 ///////////////////////
-.has-text-underline{
+.has-text-underline {
   text-decoration: underline
 }
 
-.has-header{
+.has-header {
   margin-top: $header-height;
 
-  @media (min-width: $desktop-min-width){
+  @media (min-width: $desktop-max-width){
     margin-top: $header-height-desktop;
   }
 }
 
-.has-header-desktop{
+.has-header-desktop {
   height: $header-height-desktop;
 }
 
@@ -99,7 +111,7 @@ body{
   }
 }
 
-@media (min-width: $tablet-min-width){
+@media (min-width: $tablet-max-width){
   .ellipsis {
     &.is-ellipsis-1-pc {
       -webkit-line-clamp: 1;
@@ -183,7 +195,7 @@ body{
   margin-bottom: 4rem;
 }
 
-@media (min-width: $tablet-min-width){
+@media (min-width: $tablet-max-width){
   .mt-0-pc{
     margin-top: 0;
   }
@@ -288,7 +300,7 @@ body{
   margin-right: -1rem;
 }
 
-@media (min-width: $tablet-min-width){
+@media (min-width: $tablet-max-width){
   .ml-0-pc {
     margin-left: 0;
   }
@@ -316,6 +328,9 @@ body{
 
   .mr-0-pc {
     margin-right: 0;
+  }
+  .mr-4-pc {
+    margin-right: 0.25rem;
   }
   .mr-8-pc {
     margin-right: 0.5rem;
@@ -347,7 +362,7 @@ body{
   margin-top: -0.75rem;
 }
 
-@media (min-width: $desktop-min-width){
+@media (min-width: $desktop-max-width){
   .mt-8-desktop {
     margin-top: 8px;
   }
@@ -453,9 +468,12 @@ body{
   padding-bottom: 3rem;
 }
 
-@media (min-width: $tablet-min-width){
+@media (min-width: $tablet-max-width){
   .pd-0-pc{
     padding: 0px;
+  }
+  .pd-0-pc{
+    padding: 1.35px;
   }
   .pt-8-pc {
     padding-top: 0.5rem;
@@ -505,7 +523,7 @@ body{
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-max-width) {
   .pd-8-pc {
     padding: 0.5rem;
   }

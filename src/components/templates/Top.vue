@@ -16,4 +16,5 @@ export default {
 
 <style lang="scss">
 @import '../../styles/_variables.scss';
+
 </style>

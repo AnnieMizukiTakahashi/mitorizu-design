@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 import '../node_modules/bulma/bulma.sass'
+import carousel from 'buefy'
+import 'buefy/dist/buefy.css'
 
+Vue.use(carousel)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

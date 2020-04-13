@@ -19,18 +19,18 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <div class="has-text-weight-semibold is-right is-flex-desktop">
-                <li class="navbar-item">
-                    <router-link class="has-text-white" to="about">知の見取り図とは？</router-link>
-                </li>
-                <li class="navbar-item">
-                    <router-link class="has-text-white" to="category-detail">うまく学習するには？</router-link>
-                </li>
-                <li class="navbar-item">
-                    <router-link class="has-text-white" to="theme">テーマから記事を探す</router-link>
-                </li>
-                <li class="navbar-item">
-                    <router-link class="has-text-white" to="category">学術分野から記事を探す</router-link>
-                </li>
+                <router-link to="about">
+                <a class="navbar-item">知の見取り図とは？</a>
+                </router-link>
+                <router-link to="category-detail">
+                  <a class="navbar-item">うまく学習するには？</a>
+                </router-link>
+                <router-link to="theme">
+                  <a class="navbar-item">テーマから記事を探す</a>
+                </router-link>
+                <router-link to="category">
+                <a class="navbar-item">学術分野から記事を探す</a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 })
-
 </script>
 
 <style lang="scss">
@@ -65,12 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   left: 0;
   width: 100%;
   position: fixed;
-  // padding-left: 1rem;
-  // .row {
-  //   margin-right: auto;
-  //   margin-left: auto;
-  //   height: $header-height;
-  // }
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 header {
@@ -84,13 +78,35 @@ header {
       color: $white;
     }
   }
+
   .navbar-menu {
-    background-color: $main-color;
-    margin: auto;
+    @media (min-width: $desktop-max-width) {
+      a {
+        color: $white;
+        display: flex;
+        align-items: center;
+        }
+      a:hover {
+        color: $white;
+        background-color: $main-hover-color;
+      }
+    }
+
+    @media (max-width: $desktop-max-width) {
+      a {
+        color: $text-dark-blue;
+        font-weight: normal;
+      }
+
+      a:hover {
+        color: $text-dark-blue;
+        font-weight: bold;
+      }
+    }
   }
 }
 
-@media (min-width: $desktop-min-width) {
+@media (min-width: $desktop-max-width) {
   .navbar {
     height: $header-height-desktop;
   }
@@ -99,13 +115,13 @@ header {
   }
 }
 
-@media (max-width: $desktop-min-width){
+@media (max-width: $desktop-max-width){
   .subtitle {
     display: none;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: $mobile-max-width){
   .subtitle-mobile {
     display: none;
   }
