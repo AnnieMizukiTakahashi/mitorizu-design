@@ -13,10 +13,18 @@ $text-dark-blue: #3b3d45;
 $background-color: #fafbfe;
 $white: #ffffff;
 // $gray-100: #edeff4;
-// $book-light-color: #ffffff;
 
+// bulma変数の書き換え
 @import '~bulma/sass/utilities/_all';
-$carousel-arrow-color: #7490C6;
+// 学問分野
+$orange: #E05700; // sociology
+$red: #E37070; // humanities
+$turquoise: #44C0CB; // science
+$green: #1B8912; //natural science
+$bule: #13387E; //formal science
+
+// carousel
+$carousel-arrow-color: rgb(166, 194, 248);
 $carousel-indicator-border: #7490C6;
 $carousel-indicator-color: #ffffff;
 // $carousel-min-height: 162px;

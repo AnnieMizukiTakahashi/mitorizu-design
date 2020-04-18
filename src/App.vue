@@ -58,6 +58,11 @@ body{
   color: $main-color;
 }
 
+.tag-sociology-color {
+  color: $white;
+  background-color: $orange;
+}
+
 .background-primary {
   background-color: $primary;
 }
