@@ -1,18 +1,22 @@
 <template>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color main-text-color">
+  <div class="card pd-16-pc pd-8  has-text-weight-bold white-text-color main-text-color">
     <tag
       class="study-tag"
-      :field="'芸術学'"
-      :color="'#E37070'"/>
+      :field="'社会学'"
+      :color="'#E05700'"
+      />
       <div class="card-title pr-16">
-        <p class="is-size-7">ヨーロッパにおける宗教と美術にはどんな関わりがあったのか</p>
-        <p class="is-size-6">Vol.2 絵画はキリスト教をいかに広く伝搬しえたのか</p>
-    </div>
+        <p class="is-size-7">LGBT、SOGIというコンセプトはどのように社会実装されてきたか</p>
+        <div class="container is-flex">
+          <img src="../../assets/ic_book_white_24px.svg" class="book mr-8" alt="">
+          <p class="is-size-6">LGBTQ 学びはじめの本棚</p>
+        </div>
+      </div>
   </div>
 </template>
 
 <script>
-import TagRed from '../atoms/Tag.vue';
+import Tag from '../atoms/Tag.vue';
 export default {
   components: {
     Tag
@@ -25,7 +29,7 @@ export default {
 
 .card {
   position: relative;
-  background-image: linear-gradient(rgba(40, 43, 51, .3), rgba(40, 43, 51, .3)), url(../../assets/sample/sample_image_2.png);
+  background-image: linear-gradient(rgba(40, 43, 51, .3), rgba(40, 43, 51, .3)), url(../../assets/sample/sample_image_1.png);
   background-size: cover;
 }
 

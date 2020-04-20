@@ -4,11 +4,11 @@
       <div class="column is-8">
         <main-visual-large class="main-visual-large mr-4-pc mb-4"/>
       </div>
-      <div class="main-visual-card column">
+      <div class="main-card column">
         <div class="large-card-border"/>
-        <top-card class="top-card"/>
+        <main-visual-card class="main-visual-card"/>
         <div class="card-border"/>
-        <top-book-card class="top-book-card"/>
+        <main-visual-book-card class="main-visual-book-card"/>
       </div>
     </div>
   </div>
@@ -16,25 +16,25 @@
 
 <script>
 import MainVisualLarge from '../molecules/MainVisualLarge.vue'
-import TopCard from '../molecules/TopCard.vue'
-import TopBookCard from '../molecules/TopBookCard.vue'
+import MainVisualCard from '../molecules/MainVisualCard.vue'
+import MainVisualBookCard from '../molecules/MainVisualBookCard.vue'
 
 export default {
   components: {
     MainVisualLarge,
-    TopCard,
-    TopBookCard
+    MainVisualCard,
+    MainVisualBookCard
   }
 }
 </script>
 <style lang="scss" scoped>
 @import '../../styles/_variables.scss';
 
-.top-card {
+.main-visual-card {
   height: 48.7%;
 }
 
-.top-book-card {
+.main-visual-book-card {
   height: 48.7%;
 }
 
@@ -46,15 +46,15 @@ export default {
 }
 
 @media (max-width: $tablet-max-width) {
-  .top-card {
+  .main-visual-card {
     height: 100%;
   }
 
-  .top-book-card {
+  .main-visual-book-card {
     height: 100%;
   }
 
-  .main-visual-card{
+  .main-card{
     display: flex;
     height: 10.25rem;
     width: auto;

@@ -1,15 +1,23 @@
 <template>
   <div class="page-container is-desktop hero is-fullheight has-header">
     <main-visual/>
+    <first-user class="mt-32 mt-48-pc ml-16 mr-16"/>
+    <new-article class="mt-24 mt-32-pc ml-16 mr-16"/>
   </div>
 </template>
 
 <script>
 import MainVisual from '../organisms/MainVisual.vue'
+import FirstUser from '../organisms/FirstUser.vue'
+import Headding from '../atoms/Headding.vue'
+import NewArticle from '../organisms/NewArticle.vue'
 
 export default {
   components: {
-    MainVisual
+    MainVisual,
+    FirstUser,
+    Headding,
+    NewArticle
   }
 }
 </script>

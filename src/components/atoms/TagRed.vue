@@ -1,7 +1,7 @@
 <template>
-<div class="study-tag pl-8 pr-8 pt-4 pb-4 is-size-7">
-  <p class="text-color-white has-text-centerd">芸術学</p>
-</div>
+  <div class="study-tag pl-8 pr-8 pt-4 pb-4 is-size-7">
+    <p class="text-color-white has-text-centerd">芸術学</p>
+  </div>
 </template>
 
 <style lang="scss" scoped>
