@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="page-container">
     <headding
     class=""
     :headding="'新着記事'"/>

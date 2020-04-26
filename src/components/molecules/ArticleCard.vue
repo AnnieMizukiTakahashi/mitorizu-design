@@ -1,18 +1,21 @@
 <template>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color main-text-color">
-    <tag-red class="study-tag"/>
+  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color">
+    <tag
+      class="study-tag"
+      :field="'医学'"
+      :color="'#44C0CB'"/>
       <div class="card-title pr-16">
-        <p class="is-size-7">ヨーロッパにおける宗教と美術にはどんな関わりがあったのか</p>
-        <p class="is-size-6">Vol.2 絵画はキリスト教をいかに広く伝搬しえたのか</p>
+        <p class="is-size-7">信頼するとはどういうことか信頼研究の最前線</p>
+        <p class="is-size-6">Vol.2インタビュー記事とおすすめ書籍</p>
     </div>
   </div>
 </template>
 
 <script>
-import TagRed from '../atoms/TagRed.vue';
+import Tag from '../atoms/Tag.vue';
 export default {
   components: {
-    TagRed
+    Tag
   }
 }
 </script>
