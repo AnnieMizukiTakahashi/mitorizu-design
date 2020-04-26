@@ -1,4 +1,5 @@
-$desktop-max-width: 1024px;
+$widescreen-min-width: 1024px;
+$desktop-max-width: 1023px;
 $desktop-min-width: 769px;
 $tablet-max-width: 768px;
 $mobile-max-width: 480px;
@@ -21,7 +22,15 @@ $orange: #E05700; // sociology
 $red: #E37070; // humanities
 $turquoise: #44C0CB; // science
 $green: #1B8912; //natural science
-$bule: #13387E; //formal science
+$blue: #3d74da; //formal science
+
+// 学問分野 light-color
+$light-orange: #fee0ce; // sociology
+$light-red: #ffdada; // humanities
+$light-turquoise: #bcf2f7; // science
+$light-green: #e7f7e5; //natural science
+$light-blue: #e0e8f9; //formal science
+
 
 // carousel
 $carousel-arrow-color: rgb(166, 194, 248);
