@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="page-container mb-32 mb-64-pc">
     <headding
     class=""
     :headding="'話題のテーマ'"/>
@@ -26,14 +26,16 @@ export default {
     allTheme: [
       {
         id: 1,
-        title: '生物学と芸術学の記事を内包しているテーマ',
+        title: '生物学と芸術学と物理学の記事を内包しているテーマ',
         field: {
           first: '生物学',
-          second: '芸術学'
+          second: '芸術学',
+          third: '物理学'
         },
         tagColor: {
           first: 'green-study-tag',
-          second: 'red-study-tag'
+          second: 'red-study-tag',
+          third: 'blue-study-tag'
         }
       },
       {
@@ -44,16 +46,16 @@ export default {
           second: '社会学'
         },
         tagColor: {
-          first: 'green-study-tag',
-          second: 'red-study-tag'
+          first: 'blue-study-tag',
+          second: 'orange-study-tag'
         }
       },
       {
         id: 3,
-        title: '芸術学の記事を内包しているテーマ',
+        title: '芸術学と文学を記事を内包しているテーマ',
         field: {
           first: '芸術学',
-          second: '芸術学'
+          second: '文学'
         },
         tagColor:{
           first: 'red-study-tag',

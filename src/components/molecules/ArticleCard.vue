@@ -1,12 +1,12 @@
 <template>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color">
+  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color ">
     <tag
       class="study-tag"
-      :field="'医学'"
-      :color="'#44C0CB'"/>
+      :field="article.field"
+      :tag-color="article.tagColor"/>
       <div class="card-title pr-16">
-        <p class="is-size-7">信頼するとはどういうことか信頼研究の最前線</p>
-        <p class="is-size-6">Vol.2インタビュー記事とおすすめ書籍</p>
+        <p class="is-size-7">{{ article.theme }}</p>
+        <p class="is-size-6">{{ article.title }}</p>
     </div>
   </div>
 </template>
@@ -16,6 +16,11 @@ import Tag from '../atoms/Tag.vue';
 export default {
   components: {
     Tag
+  },
+  props: {
+    article: {
+      type: Object
+    }
   }
 }
 </script>

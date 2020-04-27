@@ -24,16 +24,23 @@ export default {
 @import '../../styles/_variables.scss';
   .study-tag {
     color: $white;
-    border-radius: 16px;
+    border-radius: 4px;
+  }
+
+  .orange-study-tag {
+    background-color: $orange; // sociology
+  }
+  .red-study-tag {
+    background-color: $red; // humanities
+  }
+  .turquoise-study-tag {
+    background-color: $turquoise; // science
   }
   .green-study-tag {
     background-color: $green; //natural science
   }
   .blue-study-tag {
     background-color: $blue; //formal science
-  }
-  .red-study-tag {
-    background-color: $red; // humanities
   }
 
 </style>
