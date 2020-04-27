@@ -14,8 +14,8 @@
       :tag-color="theme.tagColor.second"/>
     <tag
       class="mr-8"
-      :field="theme.field.second"
-      :tag-color="theme.tagColor.second"/>
+      :field="theme.field.third"
+      :tag-color="theme.tagColor.third"/>
     </div>
   </div>
 </template>
@@ -40,6 +40,7 @@ export default {
 .card {
   position: relative;
   height: 164px;
+
 
   .card-title {
     position: absolute;
