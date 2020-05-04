@@ -3,7 +3,7 @@
     <tag
       class="study-tag"
       :field="'芸術学'"
-      :color="'#E37070'"/>
+      :tagColor="'red-study-tag'"/>
       <div class="card-title pr-16">
         <p class="is-size-7">ヨーロッパにおける宗教と美術にはどんな関わりがあったのか</p>
         <p class="is-size-6">Vol.2 絵画はキリスト教をいかに広く伝搬しえたのか</p>

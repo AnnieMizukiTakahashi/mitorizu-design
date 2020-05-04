@@ -7,16 +7,9 @@
     <div class="is-flex">
     <tag
       class="mr-8"
-      :field="theme.field.first"
-      :tag-color="theme.tagColor.first"/>
-    <tag
-      class="mr-8"
-      :field="theme.field.second"
-      :tag-color="theme.tagColor.second"/>
-    <tag
-      class="mr-8"
-      :field="theme.field.third"
-      :tag-color="theme.tagColor.third"/>
+      v-for="tagProp in theme.tagProps" :key="tagProp.id"
+      :field="tagProp.field"
+      :tagColor="tagProp.tagColor"/>
     </div>
   </div>
 </template>
@@ -33,6 +26,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

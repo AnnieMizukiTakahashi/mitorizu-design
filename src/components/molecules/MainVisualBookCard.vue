@@ -3,7 +3,7 @@
     <tag
       class="study-tag"
       :field="'社会学'"
-      :color="'#E05700'"
+      :tagColor="'orange-study-tag'"
       />
       <div class="card-title pr-16">
         <p class="is-size-7">LGBT、SOGIというコンセプトはどのように社会実装されてきたか</p>
