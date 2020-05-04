@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Tag from '../atoms/Tag.vue';
+import Tag from '../atoms/Tag.vue'
 export default {
   components: {
     Tag
@@ -41,7 +41,6 @@ export default {
 .card {
   position: relative;
   height: 164px;
-
 
   .card-title {
     position: absolute;

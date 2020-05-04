@@ -29,11 +29,11 @@ export default {
     return {
       pauseInfo: false,
       interval: 3000
-      }
-    },
-    methods: {
-    getImgUrl(value) {
-        return `https://picsum.photos/id/43${value}/680/324`
+    }
+  },
+  methods: {
+    getImgUrl (value) {
+      return `https://picsum.photos/id/43${value}/680/324`
     }
   }
 }
