@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Tag from '../atoms/Tag.vue';
+import Tag from '../atoms/Tag.vue'
 export default {
   components: {
     Tag
