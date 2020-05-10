@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../styles/_variables.scss';
+@import '@/styles/_variables.scss';
 .slide-container {
   height: 100%;
   position: relative;

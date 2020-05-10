@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <style lang="scss">
-@import '../../styles/_variables.scss';
+@import '@/styles/_variables.scss';
 .fixed-container {
   z-index: 100;
   top: 0;

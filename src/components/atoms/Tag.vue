@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/_variables.scss';
+@import '@/styles/_variables.scss';
   .study-tag {
     color: $white;
     border-radius: 4px;

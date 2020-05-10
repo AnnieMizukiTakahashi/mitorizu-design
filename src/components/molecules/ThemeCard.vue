@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Tag from '../atoms/Tag.vue'
+import Tag from '@/components/atoms/Tag.vue'
 export default {
   components: {
     Tag
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/_variables.scss';
+@import '@/styles/_variables.scss';
 
 .card {
   position: relative;
