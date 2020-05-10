@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import RoundButton from '../atoms/RoundButton.vue'
+import RoundButton from '@/components/atoms/RoundButton.vue'
 
 export default {
   components: {

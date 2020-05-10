@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import Headding from '../atoms/Headding.vue'
-import ArticleCard from '../molecules/ArticleCard.vue'
+import Headding from '@/components/atoms/Headding.vue'
+import ArticleCard from '@/components/molecules/ArticleCard.vue'
 export default {
   components: {
     Headding,

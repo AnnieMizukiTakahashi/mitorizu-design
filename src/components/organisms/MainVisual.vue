@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import MainVisualLarge from '../molecules/MainVisualLarge.vue'
-import MainVisualCard from '../molecules/MainVisualCard.vue'
-import MainVisualBookCard from '../molecules/MainVisualBookCard.vue'
+import MainVisualLarge from '@/components/molecules/MainVisualLarge.vue'
+import MainVisualCard from '@/components/molecules/MainVisualCard.vue'
+import MainVisualBookCard from '@/components/molecules/MainVisualBookCard.vue'
 
 export default {
   components: {
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../../styles/_variables.scss';
+@import '@/styles/_variables.scss';
 
 .main-visual-card {
   height: 48.7%;

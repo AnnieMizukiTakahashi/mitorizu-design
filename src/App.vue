@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Header from './components/organisms/Header.vue'
-import Footer from './components/organisms/Footer.vue'
+import Header from '@/components/organisms/Header.vue'
+import Footer from '@/components/organisms/Footer.vue'
 
 export default {
   name: 'App',
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/_variables.scss";
+@import "@/styles/_variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Gothic&display=swap');
 
 #app {

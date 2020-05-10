@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import MainVisual from '../organisms/MainVisual.vue'
-import FirstUser from '../organisms/FirstUser.vue'
-import Headding from '../atoms/Headding.vue'
-import NewArticle from '../organisms/NewArticle.vue'
-import Featured from '../organisms/Featured.vue'
+import MainVisual from '@/components/organisms/MainVisual.vue'
+import FirstUser from '@/components/organisms/FirstUser.vue'
+import Headding from '@/components/atoms/Headding.vue'
+import NewArticle from '@/components/organisms/NewArticle.vue'
+import Featured from '@/components/organisms/Featured.vue'
 
 export default {
   components: {
@@ -24,8 +24,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@import '../../styles/_variables.scss';
-
-</style>
