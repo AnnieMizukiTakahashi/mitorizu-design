@@ -9,7 +9,7 @@ $header-height-desktop: 72px;
 
 $main-color: #7490c6;
 $main-hover-color: #5776b5;
-$dark-blue: #282b33;
+$dark-blue: #060b1a;
 $text-dark-blue: #3b3d45;
 $background-color: #e5e8f3;
 $white: #ffffff;
@@ -18,11 +18,11 @@ $white: #ffffff;
 // bulma変数の書き換え
 @import '~bulma/sass/utilities/_all';
 // 学問分野
-$orange: #E05700; // sociology
-$red: #E37070; // humanities
-$turquoise: #44C0CB; // science
-$green: #1B8912; //natural science
-$blue: #3d74da; //formal science
+$orange: #bf4e08; // sociology
+$red: #cb2c2c; // humanities
+$turquoise: #147f88; // science
+$green: #0f7b05; //natural science
+$blue: #1650bb; //formal science
 
 // 学問分野 light-color
 $light-orange: #fee0ce; // sociology
@@ -37,6 +37,11 @@ $carousel-arrow-color: rgb(166, 194, 248);
 $carousel-indicator-border: #7490C6;
 $carousel-indicator-color: #ffffff;
 // $carousel-min-height: 162px;
+
+//img var
+// :root {
+//   --article-image: url('{{ articleImage }}');
+// }
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';

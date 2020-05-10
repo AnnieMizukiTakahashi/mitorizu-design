@@ -1,9 +1,10 @@
 <template>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold default-text-color"
-  :class="cardBackground">
-    <div class="card-title pr-16">
+  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
+    :class="cardBackground"
+    :style='{ backgroundImage: "url(" + theme.img + ")"}'>
+    <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
       <p class="is-size-6">{{ theme.title }}</p>
-    </div>
+    </figcaption>
     <div class="is-flex">
     <tag
       class="mr-8"
@@ -34,17 +35,21 @@ export default {
 
 .card {
   position: relative;
+  background-size: cover;
   height: 164px;
 
   .card-title {
     position: absolute;
+    background-color: rgba(6, 11, 26, 0.8);
+    left: 1rem;
+    right: 1rem;
     bottom: 1rem;
   }
 }
 @media (max-width: $tablet-max-width) {
   .card {
   position: relative;
-  height: 104px;
+  height: 120px;
   }
 }
 

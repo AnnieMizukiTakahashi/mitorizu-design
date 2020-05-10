@@ -32,7 +32,7 @@ export default {
           title: 'Vol.2インタビュー記事とおすすめ書籍',
           field: '医学',
           tagColor: 'turquoise-study-tag',
-          img: '../../assets/sample/sample_image_2.png'
+          img: 'static/sample_image_2.png'
         },
         {
           id: 2,
@@ -40,7 +40,7 @@ export default {
           title: 'Vol.1 幸福な独身者たちから私たちが学ぶべきこととは。',
           field: '社会学',
           tagColor: 'orange-study-tag',
-          img: '../../assets/sample/sample_image_4.png'
+          img: 'static/sample_image_4.png'
         },
         {
           id: 3,
@@ -48,7 +48,7 @@ export default {
           title: '哲学者は物理学者の本気の拳をどう受け止めるか…谷村省吾「一物理学者が観た哲学」を読んで',
           field: '物理学',
           tagColor: 'turquoise-study-tag',
-          img: '../../assets/sample/sample_image_3.png'
+          img: 'static/sample_image_3.png'
         }
       ]
     }
