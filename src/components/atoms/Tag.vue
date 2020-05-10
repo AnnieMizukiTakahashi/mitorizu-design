@@ -1,6 +1,6 @@
 <template>
   <div class="study-tag pl-8 pr-8 pt-4 pb-4 is-size-7" :class="tagColor">
-    <p class="text-color-white has-text-centerd">{{ field }}</p>
+    <p class="has-text-weight-bold has-text-centerd">{{ field }}</p>
   </div>
 </template>
 
@@ -27,19 +27,24 @@ export default {
   }
 
   .orange-study-tag {
-    background-color: $orange; // sociology
+    background-color: $white;
+    color: $orange; // sociology
   }
   .red-study-tag {
-    background-color: $red; // humanities
+    background-color: $white;
+    color: $red; // humanities
   }
   .turquoise-study-tag {
-    background-color: $turquoise; // science
+    background-color: $white;
+    color: $turquoise; // science
   }
   .green-study-tag {
-    background-color: $green; //natural science
+    background-color: $white;
+    color: $green; //natural science
   }
   .blue-study-tag {
-    background-color: $blue; //formal science
+    background-color: $white;
+    color: $blue; //formal science
   }
 
 </style>
