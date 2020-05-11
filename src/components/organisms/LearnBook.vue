@@ -13,43 +13,50 @@
       <article-card :article="article"/>
       </div>
     </div>
+    <router-link :to="{ name: 'category-detail' }">
+      <round-button
+      class="mt-32-pc mt-16 mb-16"
+      :title="'他の学習法を知る'"/>
+    </router-link>
   </div>
 </template>
 
 <script>
 import ArticleCard from '@/components/molecules/ArticleCard.vue'
 import SecondHeadding from '@/components/atoms/SecondHeadding.vue'
+import RoundButton from '@/components/atoms/RoundButton.vue'
 export default {
   components: {
     ArticleCard,
-    SecondHeadding
+    SecondHeadding,
+    RoundButton
   },
   data () {
     return {
       allArticle: [
         {
           id: 1,
-          theme: '国土地理院のオープンデータを楽しむ',
-          title: '国土地理院発行の美しい地図たち',
+          theme: 'いかに集中力を引き出すには',
+          title: '即集中するための本',
           field: '学習法',
           tagColor: 'how-to-study-tag',
-          img: 'static/sample_image_2.png'
+          img: 'static/sample_image_17.png'
         },
         {
           id: 2,
-          theme: '日本の地震について',
-          title: '巨大地震に備えて読んでおくべき本',
+          theme: '人の忘却曲線に逆らうには',
+          title: '記憶の定着に役立つ本',
           field: '学習法',
           tagColor: 'how-to-study-tag',
-          img: 'static/sample_image_4.png'
+          img: 'static/sample_image_19.png'
         },
         {
           id: 3,
           theme: null,
-          title: 'ヴァーチャル旅行気分になれる本',
+          title: '独学するときの勉強法',
           field: '学習法',
           tagColor: 'how-to-study-tag',
-          img: 'static/sample_image_3.png'
+          img: 'static/sample_image_18.png'
         }
       ]
     }
