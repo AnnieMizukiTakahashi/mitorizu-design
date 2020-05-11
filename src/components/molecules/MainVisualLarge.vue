@@ -78,12 +78,4 @@ export default {
   top: 1rem;
 }
 
-// .image {
-//   background-color: $dark-blue;
-// }
-
-// .image img {
-//   display: block;
-//   opacity: 0.6;
-// }
 </style>

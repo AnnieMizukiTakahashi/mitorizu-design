@@ -46,5 +46,9 @@ export default {
     background-color: $white;
     color: $blue; //formal science
   }
+  .how-to-study-tag {
+    background-color: $white;
+    color: $main-color; //formal science
+  }
 
 </style>

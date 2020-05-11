@@ -5,10 +5,19 @@
       class="study-tag"
       :field="article.field"
       :tag-color="article.tagColor"/>
-    <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
+    <div v-if="isIcon" class="card-title pt-4 pb-4 pr-8 pl-8">
       <p class="is-size-7">{{ article.theme }}</p>
-      <p class="is-size-6">{{ article.title }}</p>
-    </figcaption>
+      <figcaption class="is-flex">
+        <img src="../../assets/ic_book_white_24px.svg" class="book mr-8" alt="white book image">
+        <p class="is-size-6">{{ article.title }}</p>
+      </figcaption>
+    </div>
+    <div v-else>
+      <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
+        <p class="is-size-7">{{ article.theme }}</p>
+        <p class="is-size-6">{{ article.title }}</p>
+      </figcaption>
+    </div>
   </div>
 </template>
 
@@ -20,7 +29,12 @@ export default {
   },
   props: {
     article: {
-      type: Object
+      type: Object,
+      required: true
+    },
+    isIcon: {
+      type: Boolean,
+      default: false
     }
   }
 }

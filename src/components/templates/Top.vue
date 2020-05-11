@@ -4,6 +4,8 @@
     <first-user class="mt-32 mt-48-pc ml-16 mr-16"/>
     <new-article class="mt-24 mt-32-pc ml-16 mr-16"/>
     <featured class="mt-24 mt-32-pc ml-16 mr-16"/>
+    <selected-book class="mt-24 mt-32-pc ml-16 mr-16"/>
+    <learn-book class="mt-24 mt-32-pc ml-16 mr-16 mb-32 mb-64-pc"/>
   </div>
 </template>
 
@@ -13,6 +15,8 @@ import FirstUser from '@/components/organisms/FirstUser.vue'
 import Headding from '@/components/atoms/Headding.vue'
 import NewArticle from '@/components/organisms/NewArticle.vue'
 import Featured from '@/components/organisms/Featured.vue'
+import SelectedBook from '@/components/organisms/SelectedBook.vue'
+import LearnBook from '@/components/organisms/LearnBook.vue'
 
 export default {
   components: {
@@ -20,7 +24,9 @@ export default {
     FirstUser,
     Headding,
     NewArticle,
-    Featured
+    Featured,
+    SelectedBook,
+    LearnBook
   }
 }
 </script>
