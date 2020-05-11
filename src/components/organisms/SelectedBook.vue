@@ -1,18 +1,18 @@
 <template>
   <div class="">
     <headding
-    class=""
+    class="mb-32-pc mb-16"
     :headding="'選書コーナー'"/>
     <div
       v-for="category in allCategory" :key="category.id">
       <category-book
       :category="category"
-      :isIcon="true" class="mt-24 mt-32-pc"/>
+      :isIcon="true" class="mb-48 mb-64-pc"/>
     </div>
     <router-link :to="{ name: 'category' }">
       <round-button
       class="mt-32-pc mt-16 mb-16"
-      :title="'他の学問分野/入門本棚も見る'"/>
+      :title="'他の学問分野の本棚も見る'"/>
     </router-link>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
               title: '感染症研究の入門本棚',
               field: '医学',
               tagColor: 'turquoise-study-tag',
-              img: 'static/sample_image_2.png'
+              img: 'static/sample_image_8.png'
             },
             {
               id: 2,
@@ -49,7 +49,7 @@ export default {
               title: '快適な睡眠のための本棚',
               field: '医学',
               tagColor: 'turquoise-study-tag',
-              img: 'static/sample_image_4.png'
+              img: 'static/sample_image_9.png'
             },
             {
               id: 3,
@@ -57,11 +57,11 @@ export default {
               title: '夜型、朝方どちらが良いかの決着についての本棚',
               field: '医学',
               tagColor: 'turquoise-study-tag',
-              img: 'static/sample_image_3.png'
+              img: 'static/sample_image_10.png'
             }
           ]
         },
-         {
+        {
           id: 2,
           name: '数学分野の本棚',
           color: 'blue',
@@ -72,7 +72,7 @@ export default {
               title: '数学の入門本棚',
               field: '数学',
               tagColor: 'blue-study-tag',
-              img: 'static/sample_image_2.png'
+              img: 'static/sample_image_11.png'
             },
             {
               id: 2,
@@ -80,7 +80,7 @@ export default {
               title: 'Python＆AI・機械学習を学ぶための本棚',
               field: '数学',
               tagColor: 'blue-study-tag',
-              img: 'static/sample_image_4.png'
+              img: 'static/sample_image_12.png'
             },
             {
               id: 3,
@@ -88,7 +88,7 @@ export default {
               title: '数学の中級者向け本棚',
               field: '数学',
               tagColor: 'blue-study-tag',
-              img: 'static/sample_image_3.png'
+              img: 'static/sample_image_13.png'
             }
           ]
         },
@@ -103,7 +103,7 @@ export default {
               title: '国土地理院発行の美しい地図たち',
               field: '地理学',
               tagColor: 'red-study-tag',
-              img: 'static/sample_image_2.png'
+              img: 'static/sample_image_14.png'
             },
             {
               id: 2,
@@ -111,7 +111,7 @@ export default {
               title: '巨大地震に備えて読んでおくべき本',
               field: '地理学',
               tagColor: 'red-study-tag',
-              img: 'static/sample_image_4.png'
+              img: 'static/sample_image_15.png'
             },
             {
               id: 3,
@@ -119,7 +119,7 @@ export default {
               title: 'ヴァーチャル旅行気分になれる本',
               field: '地理学',
               tagColor: 'red-study-tag',
-              img: 'static/sample_image_3.png'
+              img: 'static/sample_image_16.png'
             }
           ]
         }

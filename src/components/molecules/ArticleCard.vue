@@ -1,5 +1,5 @@
 <template>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
+  <div class="card pd-16-pc pd-8 has-text-weight-bold default-text-color"
     :style='{ backgroundImage: "url(" + article.img + ")"}'>
     <tag
       class="study-tag"
@@ -8,7 +8,7 @@
     <div v-if="isIcon" class="card-title pt-4 pb-4 pr-8 pl-8">
       <p class="is-size-7">{{ article.theme }}</p>
       <figcaption class="is-flex">
-        <img src="../../assets/ic_book_white_24px.svg" class="book mr-8" alt="white book image">
+        <img src="../../assets/ic_book_darkblue_24px.svg" class="book mr-8" alt="white book image">
         <p class="is-size-6">{{ article.title }}</p>
       </figcaption>
     </div>
@@ -54,7 +54,7 @@ export default {
 
   .card-title {
     position: absolute;
-    background-color: rgba(6, 11, 26, 0.8);
+    background-color: rgba(255, 255, 255, 0.92);
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
