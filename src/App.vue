@@ -58,19 +58,6 @@ export default {
     color: $main-color;
   }
 
-  // .tag-sociology-color {
-  //   color: $white;
-  //   background-color: $orange;
-  // }
-
-  // .background-primary {
-  //   background-color: $primary;
-  // }
-
-  // .background-success {
-  //   background-color: $success;
-  // }
-
   ///////////////////////
   // Button
   ///////////////////////
