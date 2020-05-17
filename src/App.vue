@@ -83,10 +83,6 @@ export default {
     }
   }
 
-  .has-header-desktop {
-    height: $header-height-desktop;
-  }
-
   .ellipsis {
     display: block;
     display: -webkit-box;

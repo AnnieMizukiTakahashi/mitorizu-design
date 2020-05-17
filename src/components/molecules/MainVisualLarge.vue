@@ -1,9 +1,7 @@
 <template>
   <section class="">
     <b-carousel
-      :pause-info="pauseInfo"
-      :interval="interval"
-      @change="info($event)">
+      :pause-info="pauseInfo">
       <b-carousel-item v-for="(item, i) in 6" :key="i">
       <section class="">
         <div class="slide-container">

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p class="pl-32 is-size-6 is-size-5-pc has-text-weight-bold"
-      :class="Color">{{ headding }}</p>
+    <p class="pl-32 is-size-6 is-size-5-pc has-text-weight-bold">{{ headding }}</p>
   </div>
 </template>
 
