@@ -13,9 +13,11 @@
           </li>
         </ul>
       </nav>
-          <p>Category_detail</p>
-      </div>
+        <headding
+        class="mt-48"
+        :headding="'学問分野から探す'"/>
     </div>
+  </div>
 </template>
 
 <script>

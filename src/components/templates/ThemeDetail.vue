@@ -18,7 +18,9 @@
           </li>
         </ul>
       </nav>
-          <p>Category_detail_learn</p>
+        <headding
+        class="mt-48"
+        :headding="'LGBT、SOGIというコンセプトはどのように社会実装されてきたか'"/>
       </div>
     </div>
 </template>
