@@ -1,7 +1,19 @@
 <template>
     <div class="page-container is-desktop hero is-fullheight has-header">
-      <div class="container mt-48 mb-48 ml-16 mr-16 ml-32-pc mr-32-pc">
+      <div class="container mb-48 ml-16 mr-16 ml-32-pc mr-32-pc">
+        <nav class="breadcrumb has-arrow-separator mt-16" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <router-link :to="{ name: 'top'}">
+                <p class="has-text-underline main-text-color">トップページ</p>
+              </router-link>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">知の見取り図とは?</a></li>
+          </ul>
+        </nav>
         <headding
+        class="mt-48"
         :headding="'知の見取り図とは'"/>
           <p class="mt-16">知の見取り図は、2014年の12月に動き出したプロジェクトです。目的は「学びたいことがあるのに、学び方がわからなくて困っている人たちを助ける」ことを通して、知的好奇心に優しい社会を創ることです。
   知の見取り図の説明とサイトにはじめに来た人たちに伝えたい理念をここに掲載します。</p>
