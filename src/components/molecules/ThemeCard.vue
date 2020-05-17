@@ -1,6 +1,5 @@
 <template>
   <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
-    :class="cardBackground"
     :style='{ backgroundImage: "url(" + theme.img + ")"}'>
     <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
       <p class="is-size-6">{{ theme.title }}</p>
