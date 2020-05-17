@@ -8,12 +8,17 @@
               <p class="has-text-underline main-text-color">トップページ</p>
             </router-link>
           </li>
+          <li>
+            <router-link :to="{ name: 'theme'}">
+              <p class="has-text-underline main-text-color">テーマ一覧</p>
+            </router-link>
+          </li>
           <li class="is-active">
-            <a href="#" aria-current="page">学問分野から探す</a>
+            <a href="#" aria-current="page">LGBT、SOGIというコンセプトはどのように社会実装されてきたか</a>
           </li>
         </ul>
       </nav>
-          <p>Category_detail</p>
+          <p>Category_detail_learn</p>
       </div>
     </div>
 </template>
