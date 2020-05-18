@@ -2,9 +2,9 @@
   <div class="page-container">
     <div class="level is-mobile">
       <div class="level-left">
-        <second-headding
-        :class="category.color"
-        :headding="category.name"/>
+      <second-headding
+      :class="category.color"
+      :headding="category.name"/>
       </div>
       <div class="level-right">
         <router-link

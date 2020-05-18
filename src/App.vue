@@ -58,6 +58,14 @@ export default {
     color: $main-color;
   }
 
+  .grey600-text-color {
+    color: $grey600
+  }
+
+  .grey400-text-color {
+    color: $grey400
+  }
+
   ///////////////////////
   // Button
   ///////////////////////
@@ -66,6 +74,12 @@ export default {
     background-color: $main-color;
     border-style: none;
     box-shadow: 0
+  }
+
+  .has-main-color-outline-button {
+    color: $main-color;
+    background-color: transparent;
+    border-color: $main-color;
   }
 
   ///////////////////////
