@@ -1,6 +1,6 @@
 <template>
     <div class="page-container is-desktop hero is-fullheight has-header">
-      <div class="container mb-48 ml-16 mr-16 ml-32-pc mr-32-pc">
+      <div class="container mb-64 ml-16 mr-16 ml-32-pc mr-32-pc">
         <nav class="breadcrumb has-arrow-separator mt-16" aria-label="breadcrumbs">
           <ul>
             <li>
@@ -23,6 +23,16 @@
             <theme-list-card :theme="theme"/>
           </div>
         </div>
+        <p class="has-text-centered">
+          <a
+            class="button is-rounded is-outlined is-medium mt-32 has-main-color-outline-button"
+            :class="{ 'is-loading': loading }"
+            :href="'?page=' + page"
+            @click.prevent.stop='loadArticle'
+            v-if='!ended'>
+            もっと見る
+          </a>
+        </p>
       </div>
     </div>
 </template>
@@ -37,6 +47,10 @@ export default {
   },
   data () {
     return {
+      loading: false,
+      ended: false,
+      page: 1,
+
       allTheme: [
         {
           id: 1,

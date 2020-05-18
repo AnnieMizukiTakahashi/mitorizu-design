@@ -13,7 +13,10 @@ $dark-blue: #060b1a;
 $text-dark-blue: #292939;
 $background-color: #e5e8f3;
 $white: #ffffff;
-// $gray-100: #edeff4;
+$grey50: #f0f0f0;
+$grey300: #e0e0e0;
+$grey400: #bbbbbb; // enable用
+$grey600: #757575;
 
 // bulma変数の書き換え
 @import '~bulma/sass/utilities/_all';
