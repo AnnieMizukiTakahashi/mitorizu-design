@@ -83,6 +83,14 @@ export default {
     }
   }
 
+  .with-arrow {
+    background: url(assets/ic_arrow_16px.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 16px;
+    height: 16px;
+  }
+
   .ellipsis {
     display: block;
     display: -webkit-box;

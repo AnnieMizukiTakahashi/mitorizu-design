@@ -1,8 +1,19 @@
 <template>
   <div class="page-container mb-32 mb-64-pc">
-    <headding
-    class=""
-    :headding="'話題のテーマ'"/>
+    <div class="level is-mobile">
+      <div class="level-left">
+        <headding
+        :headding="'話題のテーマ'"/>
+      </div>
+      <div class="level-right">
+        <router-link
+          class="is-size-6 has-text-weight-bold default-text-color mr-8"
+          :to="{ name: 'theme' }">
+          もっと見る
+        </router-link>
+        <router-link class="with-arrow" :to="{ name: 'theme' }"/>
+      </div>
+    </div>
     <div class="columns is-multiline is-centered mt-16">
       <div
         class="column is-4-tablet is-mobile-6"
