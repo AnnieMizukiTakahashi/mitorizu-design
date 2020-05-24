@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import MainVisual from '@/components/organisms/MainVisual.vue'
-import FirstUser from '@/components/organisms/FirstUser.vue'
+import MainVisual from '@/components/organisms/top/MainVisual.vue'
+import FirstUser from '@/components/organisms/top/FirstUser.vue'
 import Headding from '@/components/atoms/Headding.vue'
-import NewArticle from '@/components/organisms/NewArticle.vue'
-import Featured from '@/components/organisms/Featured.vue'
-import SelectedBook from '@/components/organisms/SelectedBook.vue'
-import LearnBook from '@/components/organisms/LearnBook.vue'
+import NewArticle from '@/components/organisms/top/NewArticle.vue'
+import Featured from '@/components/organisms/top/Featured.vue'
+import SelectedBook from '@/components/organisms/top/SelectedBook.vue'
+import LearnBook from '@/components/organisms/top/LearnBook.vue'
 
 export default {
   components: {
