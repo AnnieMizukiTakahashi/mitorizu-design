@@ -59,8 +59,8 @@ export default {
   },
   data () {
     return {
-      themeName: "LGBT、SOGIというコンセプトはどのように社会実装されてきたか",
-      themeDescription: "今回は、LGBT,SOGIの定義とあわせて誰もが生きやすい社会にしていくために活動している人について詳しくご紹介していきます。",
+      themeName: 'LGBT、SOGIというコンセプトはどのように社会実装されてきたか',
+      themeDescription: '今回は、LGBT,SOGIの定義とあわせて誰もが生きやすい社会にしていくために活動している人について詳しくご紹介していきます。',
       allArticle: [
         {
           id: 1,

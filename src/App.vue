@@ -80,14 +80,12 @@ export default {
     color: $white;
     background-color: $main-color;
     border-style: none;
-    box-shadow: 0px 2px 8px rgba(6, 11, 26, .1);
   }
 
   .has-main-color-outline-button {
     color: $main-color;
     background-color: transparent;
     border-color: $main-color;
-    box-shadow: 0px 2px 8px rgba(6, 11, 26, .1);
   }
 
   ///////////////////////
@@ -97,7 +95,6 @@ export default {
   .study-tag {
     color: $white;
     border-radius: 4px;
-    box-shadow: 2px 2px 4px rgba(6, 11, 26, .09);
   }
 
   .orange-study-tag {
