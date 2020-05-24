@@ -5,6 +5,7 @@ import About from '@/components/templates/About'
 import Theme from '@/components/templates/Theme'
 import Category from '@/components/templates/Category'
 import CategoryDetail from '@/components/templates/CategoryDetail'
+import ThemeDetail from '@/components/templates/ThemeDetail'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/category-detail',
       name: 'category-detail',
       component: CategoryDetail
+    },
+    {
+      path: '/theme-detail',
+      name: 'theme-detail',
+      component: ThemeDetail
     }
   ]
 })
