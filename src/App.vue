@@ -28,9 +28,9 @@ export default {
 #app {
     font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
     color: $text-dark-blue;
+    background-color: $background-color;
 
   body{
-    background-color: $background-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -46,6 +46,8 @@ export default {
   ///////////////////////
   // Color
   ///////////////////////
+
+  // text
   .default-text-color {
     color: $text-dark-blue;
   }
@@ -66,6 +68,11 @@ export default {
     color: $grey400
   }
 
+  // background
+  .has-bg-grey50 {
+    background-color: $grey50;
+  }
+
   ///////////////////////
   // Button
   ///////////////////////
@@ -73,13 +80,49 @@ export default {
     color: $white;
     background-color: $main-color;
     border-style: none;
-    box-shadow: 0
+    box-shadow: 0px 2px 8px rgba(6, 11, 26, .1);
   }
 
   .has-main-color-outline-button {
     color: $main-color;
     background-color: transparent;
     border-color: $main-color;
+    box-shadow: 0px 2px 8px rgba(6, 11, 26, .1);
+  }
+
+  ///////////////////////
+  // Tag
+  ///////////////////////
+
+  .study-tag {
+    color: $white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(6, 11, 26, .09);
+  }
+
+  .orange-study-tag {
+    background-color: $white;
+    color: $orange; // sociology
+  }
+  .red-study-tag {
+    background-color: $white;
+    color: $red; // humanities
+  }
+  .turquoise-study-tag {
+    background-color: $white;
+    color: $turquoise; // science
+  }
+  .green-study-tag {
+    background-color: $white;
+    color: $green; //natural science
+  }
+  .blue-study-tag {
+    background-color: $white;
+    color: $blue; //formal science
+  }
+  .how-to-study-tag {
+    background-color: $white;
+    color: $main-color; //formal science
   }
 
   ///////////////////////
