@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="category-container pt-16 pt-32-pc pb-8 pb-16-pc pl-16 pl-32-pc pr-16 pr-32-pc">
+      <div class="pt-16 pt-32-pc pb-8 pb-16-pc pl-16 pl-32-pc pr-16 pr-32-pc">
         <div v-for="category in allCategory" :key="category.id">
           <p class="is-size-6 mb-8">
           {{ category.title }}
@@ -44,7 +44,7 @@
               :tagColor="category.tagColor"
               :tagCssStyle="categoryList"
               :articleNumber="tagProp.number"
-              :hasArticleNumber="true"/>
+              :hasLargeTag="true"/>
             </div>
           </div>
         </div>
@@ -136,11 +136,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@import '@/styles/_variables.scss';
-
-.category-container {
-  background-color: $grey50;
-}
-</style>
