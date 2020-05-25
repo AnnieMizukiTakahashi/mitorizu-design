@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-    <headding
+    <second-headding
     class="mt-32"
     :headding="'記事一覧'"/>
 
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import Headding from '@/components/atoms/Headding.vue'
+import SecondHeadding from '@/components/atoms/SecondHeadding.vue'
 import ArticleCard from '@/components/molecules/ArticleCard.vue'
 export default {
   components: {
-    Headding,
+    SecondHeadding,
     ArticleCard
   },
   props: {

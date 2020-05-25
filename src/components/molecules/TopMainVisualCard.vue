@@ -7,10 +7,7 @@
       />
       <div class="pr-8 card-title">
         <p class="is-size-7">{{ article.theme }}</p>
-        <div class="is-flex">
-          <img src="../../../assets/ic_book_white_24px.svg" class="book mr-8" alt="white book image">
-          <p class="is-size-6">{{ article.title }}</p>
-        </div>
+        <p class="is-size-6">{{ article.title }}</p>
       </div>
   </div>
 </template>
@@ -25,10 +22,10 @@ export default {
     return {
       article: {
         id: 1,
-        theme: 'LGBT、SOGIというコンセプトはどのように社会実装されてきたか',
-        title: 'LGBTQ 学びはじめの本棚',
-        field: '社会学',
-        tagColor: 'orange-study-tag'
+        theme: 'ヨーロッパにおける宗教と',
+        title: 'Vol.2 絵画はキリスト教をいかに広く伝播したのか',
+        field: '芸術学',
+        tagColor: 'red-study-tag'
       }
     }
   }
@@ -40,7 +37,7 @@ export default {
 
 .card {
   position: relative;
-  background-image: linear-gradient(to bottom, transparent, rgba(6, 11, 26, 0.8)), url(../../../assets/sample/sample_image_1.png);
+  background-image: linear-gradient(to bottom, transparent, rgba(6, 11, 26, 0.8)),  url(../../assets/sample/sample_image_2.png);
   background-size: cover;
 }
 
@@ -65,7 +62,6 @@ export default {
   .card-title {
     display: table-cell;
     vertical-align: bottom;
-
   }
   .study-tag {
     position: absolute;
