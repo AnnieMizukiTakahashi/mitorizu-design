@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Top from '@/components/templates/Top'
-import About from '@/components/templates/About'
-import Theme from '@/components/templates/Theme'
-import Category from '@/components/templates/Category'
-import CategoryDetail from '@/components/templates/CategoryDetail'
-import ThemeDetail from '@/components/templates/ThemeDetail'
+import Top from '@/components/pages/Top'
+import About from '@/components/pages/About'
+import Theme from '@/components/pages/Theme'
+import Category from '@/components/pages/Category'
+import CategoryDetail from '@/components/pages/CategoryDetail'
+import ThemeDetail from '@/components/pages/ThemeDetail'
 
 Vue.use(Router)
 

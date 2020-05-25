@@ -123,6 +123,44 @@ export default {
   }
 
   ///////////////////////
+  // Headding Icons
+  ///////////////////////
+  .orange {
+    background: url(assets/ic_book_orange_24px.svg) no-repeat left center;
+    padding-left: 32px;
+    // color: $orange; // sociology
+  }
+  .red {
+    background: url(assets/ic_book_red_24px.svg) no-repeat left center;
+    padding-left: 32px;
+    // color: $red; // humanities
+  }
+  .turquoise {
+   background: url(assets/ic_book_turquoise_24px.svg) no-repeat left center;
+   padding-left: 32px;
+    // color: $turquoise; // science
+  }
+  .green {
+   background: url(assets/ic_book_green_24px.svg) no-repeat left center;
+   padding-left: 32px;
+    // color: $green; //natural science
+  }
+  .blue {
+   background: url(assets/ic_book_blue_24px.svg) no-repeat left center;
+   padding-left: 32px;
+    // color: $blue; //formal science
+  }
+  .how-to-study {
+   background: url(assets/ic_book_how_to_24px.svg) no-repeat left center;
+   padding-left: 32px;
+    // color: $main-color; //how to study
+  }
+  .dark-blue {
+   background: url(assets/ic_book_darkblue_24px.svg) no-repeat left center;
+   padding-left: 32px;
+  }
+
+  ///////////////////////
   // Style
   ///////////////////////
   .has-text-underline {

@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import MainVisualLarge from '@/components/molecules/top/MainVisualLarge.vue'
-import MainVisualCard from '@/components/molecules/top/MainVisualCard.vue'
-import MainVisualBookCard from '@/components/molecules/top/MainVisualBookCard.vue'
+import MainVisualLarge from '@/components/molecules/TopMainVisualLarge.vue'
+import MainVisualCard from '@/components/molecules/TopMainVisualCard.vue'
+import MainVisualBookCard from '@/components/molecules/TopMainVisualBookCard.vue'
 
 export default {
   components: {

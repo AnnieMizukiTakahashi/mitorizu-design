@@ -6,8 +6,10 @@
     <div
       v-for="category in allCategory" :key="category.id">
       <category-book
+      class="mb-48 mb-64-pc"
       :category="category"
-      :isIcon="true" class="mb-48 mb-64-pc"/>
+      :isIcon="true"
+      :readMore="{ title: category.name + '/記事を見る', link: 'category-detail'}"/>
     </div>
     <router-link :to="{ name: 'category' }">
       <round-button
@@ -18,9 +20,10 @@
 </template>
 
 <script>
-import CategoryBook from '@/components/molecules/CategoryBook.vue'
+import CategoryBook from '@/components/organisms/CategoryBook.vue'
 import Headding from '@/components/atoms/Headding.vue'
 import RoundButton from '@/components/atoms/RoundButton.vue'
+
 export default {
   components: {
     CategoryBook,

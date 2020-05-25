@@ -6,14 +6,9 @@
       :class="category.color"
       :headding="category.name"/>
       </div>
-      <div class="level-right">
-        <router-link
-          class="is-size-6 has-text-weight-bold default-text-color mr-8"
-          :to="{ name: 'category-detail' }">
-          もっと見る
-        </router-link>
-        <router-link class="with-arrow" :to="{ name: 'category-detail' }"/>
-      </div>
+      <read-more-button
+      class="level-right"
+      :readMore="readMore"/>
     </div>
 
     <div class="columns is-multiline is-centered mt-16">
@@ -29,10 +24,12 @@
 <script>
 import ArticleCard from '@/components/molecules/ArticleCard.vue'
 import SecondHeadding from '@/components/atoms/SecondHeadding.vue'
+import ReadMoreButton from '@/components/atoms/ReadMoreButton.vue'
 export default {
   components: {
     ArticleCard,
-    SecondHeadding
+    SecondHeadding,
+    ReadMoreButton
   },
   props: {
     category: {
@@ -42,6 +39,10 @@ export default {
     isIcon: {
       type: Boolean,
       default: false
+    },
+    readMore: {
+      type: Object,
+      required: true
     }
   }
 }
