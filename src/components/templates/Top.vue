@@ -1,14 +1,14 @@
 <template>
   <div>
     <top-main-visual/>
-    <top-first-user class="mt-24 ml-16 mr-16"/>
-    <top-new-article class="mt-24 ml-16 mr-16"
+    <top-first-user class="mt-48 ml-16 mr-16"/>
+    <top-new-article class="mt-48 ml-16 mr-16"
     :allNewArticle="this.topMockData.allNewArticle"/>
-    <top-featured class="mt-48 ml-16 mr-16"
+    <top-featured class="mt-64 ml-16 mr-16"
     :allFeaturedTheme="this.topMockData.allFeaturedTheme"/>
-    <top-selected-book class="mt-24 mt-32-pc ml-16 mr-16"
+    <top-selected-book class="mt-64 mt-32-pc ml-16 mr-16"
     :allSelectedBook="this.topMockData.allSelectedBook"/>
-    <top-learn-book class="mt-48 ml-16 mr-16 mb-64"
+    <top-learn-book class="mt-64 ml-16 mr-16 mb-64"
     :allLearnBook="this.topMockData.allLearnBook"/>
   </div>
 </template>
