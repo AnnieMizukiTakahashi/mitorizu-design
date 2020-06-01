@@ -1,21 +1,21 @@
 <template>
-<div>
-  <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
-    :style='{ backgroundImage: "url(" + theme.img + ")"}'>
-  </div>
   <div>
-    <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
-    <p class="is-size-6">{{ theme.title }}</p>
-    </figcaption>
-    <div class="is-flex">
-    <tag
-      class="mr-8"
-      v-for="tagProp in theme.tagProps" :key="tagProp.id"
-      :field="tagProp.field"
-      :tagColor="tagProp.tagColor"/>
+    <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
+      :style='{ backgroundImage: "url(" + theme.img + ")"}'>
+    </div>
+    <div>
+      <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
+      <p class="is-size-6">{{ theme.title }}</p>
+      </figcaption>
+      <div class="is-flex">
+      <tag
+        class="mr-8"
+        v-for="tagProp in theme.tagProps" :key="tagProp.id"
+        :field="tagProp.field"
+        :tagColor="tagProp.tagColor"/>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
