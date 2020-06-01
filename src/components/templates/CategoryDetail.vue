@@ -19,34 +19,34 @@
     </nav>
     <headding
     class="mt-48"
-    :headding="'心理学の記事/本棚一覧'"/>
+      :headding="'心理学の記事/本棚一覧'"/>
     <div class="columns mt-16">
-      <div class="column">
+      <div class="column is-narrow">
         <tag
-        :field="this.allCategory[4].tagProps[6].field"
-        :tagColor="this.allCategory[4].tagColor"
-        :tagCssStyle="categoryList"
-        :hasLargeTag="true"/>
+          :field="this.allCategoryTagStyle[4].tagProps[6].field"
+          :tagColor="this.allCategoryTagStyle[4].tagColor"
+          :tagCssStyle="categoryList"
+          :hasLargeTag="true"/>
       </div>
       <p class="column is-10">
         心と行動の学問であり、科学的な手法によって研究されるそのアプローチとしては、行動主義のように行動や認知を客観的に観察しようとするものと、一方で、主観的な内面的な経験を理論的な基礎におくものとがある
       </p>
     </div>
-    <category-book
-    class="mt-48"
-    :category="this.allBook[3]"
-    :isIcon="true"
-    :readMore="{ title: 'もっと見る', link: 'category-detail'}"/>
-    <category-article
-    class="mt-48"
-    :readMore="{ title: 'もっと見る', link: 'category-detail'}"/>
-    <div class="columns is-multiline is-centered mt-16">
-      <div
-        class="column is-4-tablet is-mobile-6 mb-32"
-        v-for="theme in allTheme" :key="theme.id">
-        <theme-list-card :theme="theme"/>
+    <div class="mb-64">
+      <category-book
+        class="mt-48"
+        :category="this.allCategoryDetailBook[3]"
+        :isIcon="true"
+        :readMore="{ title: 'もっと見る', link: 'category-detail'}"/>
+      <category-article
+        class="mt-48"
+        :allCategoryDetailArticle="allCategoryDetailArticle"
+        :readMore="{ title: 'もっと見る', link: 'category-detail'}"/>
+      <div class="columns is-multiline is-centered mt-16">
+      <category-detail-list
+        class="mt-48"
+        :allCategoryDetailTheme="allCategoryDetailTheme"/>
       </div>
-      <category-detail-list/>
     </div>
   </div>
 </template>
@@ -67,13 +67,26 @@ export default {
     CategoryDetailList
   },
   props: {
-    allCategory: {
-      type: Object,
+    allCategoryTagStyle: {
+      type: Array,
       required: true
     },
-    allBook: {
-      type: Object,
+    allCategoryDetailArticle: {
+      type: Array,
       required: true
+    },
+    allCategoryDetailBook: {
+      type: Array,
+      required: true
+    },
+    allCategoryDetailTheme: {
+      type: Array,
+      required: true
+    }
+  },
+  computed: {
+    categoryList () {
+      return 'font-size: ' + '1rem'
     }
   }
 }

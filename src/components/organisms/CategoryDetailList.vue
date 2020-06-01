@@ -1,31 +1,30 @@
 <template>
-  <div class="page-container">
+  <div class="page-container mr-16 ml-16">
     <second-headding
     class="mt-32"
-    :headding="'記事一覧'"/>
+    :headding="'テーマ一覧'"/>
 
     <div class="columns is-multiline is-centered mt-8">
       <div
         class="column is-4-tablet is-mobile-6"
-        v-for="article in allArticle" :key="article.id">
-        <article-card :article="article"/>
+        v-for="theme in allCategoryDetailTheme" :key="theme.id">
+        <theme-card :theme="theme"/>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import SecondHeadding from '@/components/atoms/SecondHeadding.vue'
-import ArticleCard from '@/components/molecules/ArticleCard.vue'
+import ThemeCard from '@/components/molecules/ThemeCard.vue'
 export default {
   components: {
     SecondHeadding,
-    ArticleCard
+    ThemeCard
   },
   props: {
-    allArticle: {
-      type: Object,
+    allCategoryDetailTheme: {
+      type: Array,
       required: true
     }
   }
