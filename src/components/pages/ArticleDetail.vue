@@ -11,8 +11,8 @@ import ArticleDetailSideColumn from '@/components/templates/ArticleDetailSideCol
 
 export default {
   components: {
-  ArticleDetail,
-  ArticleDetailSideColumn
+    ArticleDetail,
+    ArticleDetailSideColumn
   },
   data () {
     return {
