@@ -1,18 +1,23 @@
 <template>
   <div>
-    <div class="card pd-16-pc pd-8 has-text-weight-bold white-text-color"
+    <div class="card">
+      <div class="card-image"
       :style='{ backgroundImage: "url(" + theme.img + ")"}'>
-    </div>
-    <div>
-      <figcaption class="card-title pt-4 pb-4 pr-8 pl-8">
-      <p class="is-size-6">{{ theme.title }}</p>
-      </figcaption>
-      <div class="is-flex">
-      <tag
-        class="mr-8"
-        v-for="tagProp in theme.tagProps" :key="tagProp.id"
-        :field="tagProp.field"
-        :tagColor="tagProp.tagColor"/>
+      </div>
+      <div class="card-content">
+        <figcaption class="card-title">
+          <p class="is-size-6 has-text-weight-bold">{{ theme.title }}</p>
+        </figcaption>
+        <div class="content grey600-text-color mt-8">
+          There detail Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="is-flex">
+        <tag
+          class="mr-8"
+          v-for="tagProp in theme.tagProps" :key="tagProp.id"
+          :field="tagProp.field"
+          :tagColor="tagProp.tagColor"/>
+        </div>
       </div>
     </div>
   </div>
@@ -35,22 +40,9 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
 
-.card {
-  position: relative;
+.card-image {
   background-size: cover;
   height: 164px;
-
-  .study-tag {
-    position: absolute;
-}
-
-  .card-title {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.92);
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-  }
 }
 
 </style>

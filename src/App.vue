@@ -99,27 +99,39 @@ export default {
 
   .orange-study-tag {
     background-color: $white;
-    color: $orange; // sociology
+    color: $orange;
+    border: solid 1px $orange;
+    // sociology
   }
   .red-study-tag {
     background-color: $white;
-    color: $red; // humanities
+    color: $red;
+    border: solid 1px $red;
+    // humanities
   }
   .turquoise-study-tag {
     background-color: $white;
-    color: $turquoise; // science
+    color: $turquoise;
+    border: solid 1px $turquoise;
+    // science
   }
   .green-study-tag {
     background-color: $white;
-    color: $green; //natural science
+    color: $green;
+    border: solid 1px $green;
+    //natural science
   }
   .blue-study-tag {
     background-color: $white;
-    color: $blue; //formal science
+    color: $blue;
+    border: solid 1px $blue;
+    //formal science
   }
   .how-to-study-tag {
     background-color: $white;
-    color: $main-color; //formal science
+    color: $main-color;
+    border: solid 1px $main-color;
+    //formal science
   }
 
   ///////////////////////

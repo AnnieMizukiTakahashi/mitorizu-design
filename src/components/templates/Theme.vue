@@ -19,10 +19,10 @@
       <div
         class="column is-4-tablet is-mobile-6 mb-32"
         v-for="theme in this.allTheme" :key="theme.id">
-        <theme-list-card :theme="theme"/>
+        <theme-card :theme="theme"/>
       </div>
     </div>
-    <p class="has-text-centered">
+    <!-- <p class="has-text-centered">
       <a
         class="button is-rounded is-outlined is-medium mt-32 has-main-color-outline-button"
         :class="{ 'is-loading': loading }"
@@ -31,21 +31,21 @@
         v-if='!ended'>
         もっと見る
       </a>
-    </p>
+    </p> -->
   </div>
 </template>
 
 <script>
-import ThemeListCard from '@/components/molecules/ThemeListCard.vue'
+import ThemeCard from '@/components/molecules/ThemeCard.vue'
 import Headding from '@/components/atoms/Headding.vue'
 export default {
   components: {
-    ThemeListCard,
+    ThemeCard,
     Headding
   },
   props: {
     allTheme: {
-      type: Object,
+      type: Array,
       required: true
     }
   }
