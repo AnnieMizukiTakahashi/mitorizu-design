@@ -9,7 +9,7 @@
       class="mb-48 mb-64-pc"
       :category="category"
       :isIcon="true"
-      :readMore="{ title: category.name + '/記事を見る', link: 'category-detail'}"/>
+      :readMore="{ title: '本棚/記事を見る', link: 'category-detail'}"/>
     </div>
     <router-link :to="{ name: 'category' }">
       <round-button
